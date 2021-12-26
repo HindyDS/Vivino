@@ -97,7 +97,7 @@ def vivino_scraper(page):
         except:
             type_ = np.nan
 
-        record = [Winery, Wine, ratings_average, ratings_count, status, grapes, is_natural, region, country, acidity, place, vintage_type, year, volume_ml, Price, currency, type_]
+        record = [Winery, Wine, ratings_average, ratings_count, status, grapes, is_natural, region, country, acidity, vintage_type, year, volume_ml, Price, currency, type_]
         results.append(record)
         dataframe = pd.DataFrame(results,columns=['Winery','Wine','Rating','num_review', 'status', 'grapes', 'is_natural', 'region', 'country', 'acidity', 'vintage_type', 'year', 'volume_ml', 'Price', 'currency', 'type'])
         
